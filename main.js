@@ -26,17 +26,17 @@ function resetState() {
 // create symbols
 function randomsym() {
     var rightAns = symbls[Math.ceil(Math.random() * 10)]
-    var str = "<ul>";
+    var str = "<br>";
     for (i = 0; i <= 100; i++) {
         if (i % 9) {
             var sym = symbls[Math.ceil(Math.random() * 10)]
 
-            str = str + "<li>" + i + " - " + sym + "<li>"
+            str = str + i + "-" + sym + "<br>"
 
         }
 
         else {
-            str = str + "<li>" + i + " - " + rightAns + "<li>"
+            str = str + i + "-" + rightAns + "<br>"
             answerSym = rightAns
         }
     }
