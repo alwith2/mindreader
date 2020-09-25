@@ -44,11 +44,6 @@ function randomsym() {
     return str;
 }
 
-window.onhashchange = function () {
-    state--
-    renderView()
-}
-
 function renderView() {
     if (state == 1) {
         document.getElementById("main").innerHTML = "I know what you did last summer"
